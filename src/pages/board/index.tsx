@@ -236,7 +236,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
     tasks.docs.map((u) => {
       return {
         id: u.id,
-        createdFormated: format(u.data().created.toDate(), "dd MMMM yyyy"),
+        createdFormated: format(u.data().created.toDate(), "dd MMMM yyyy", {locale: ptBR,}),
         ...u.data(),
       };
     })

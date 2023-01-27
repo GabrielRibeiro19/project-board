@@ -8,6 +8,7 @@ import { ParsedUrlQuery } from 'querystring'
 import styles from "./task.module.scss";
 import Head from "next/head";
 import { FiCalendar } from "react-icons/fi";
+import ptBR from "date-fns/locale/pt-BR";
 
 type Task = {
   id: string;
@@ -76,7 +77,7 @@ export const getServerSideProps: GetServerSideProps = async ({
         created: snapshot?.data()?.created,
         createdFormated: format(
           snapshot?.data()?.created.toDate(),
-          "dd MMMM yyy"
+          "dd MMMM yyy", {locale: ptBR,}
         ),
         tarefa: snapshot?.data()?.tarefa,
         userId: snapshot?.data()?.userId,
