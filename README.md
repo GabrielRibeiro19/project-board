@@ -16,5 +16,4 @@ Esse projeto foi criado seguindo o curso de NextJS do Sujeito Programador.
 
 ### `Projeto Online`
 
-Para ver o projeto online é só clicar [aqui](https://board-app.vercel.app/) ou acessar pelo link [https://board-app.vercel.app/](https://board-app.vercel.app/).
-
+Para ver o projeto online é só clicar [aqui](https://board.gribeiro.dev) ou acessar pelo link [https://board.gribeiro.dev](https://board.gribeiro.dev).
